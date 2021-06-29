@@ -1,10 +1,9 @@
-# Repository Seed
-This is a template to seed repositories
+# Welcome
+Welcome to The Codebase.
 
-## Woj's Guide to Repository Management
-This repository follows a specific structure. Each commit should be made only on top of it's prerequisites. This way ideas can be traced.
+One codebase is a singular codebase that serves as both a template to start a project as well as a tutorial on how to code. It does this by asserting that every set of changes is a cohesive lesson, and every lesson is taught as a series of changes. As a result, each branch of this codebase of this codebase can show you exactly how it got to the way it was by following each predecessor lesson.
 
 ## Documents
 A repository is a series of documents. These documents should have structure and purpose.
-  - [development.md](./development.md) - document responsible for getting a developer started in this repository
-
+  - [development](./development.md) - document responsible for getting a developer started in this repository
+  - [thesaurus](./thesaurus.md) will provide definitions of important words
