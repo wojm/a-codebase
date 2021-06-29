@@ -1,11 +1,20 @@
 {
-  "name": "npm_intro",
-  "version": "0.0.0",
-  "description": "intro to npm",
+  "name": "node-app",
+  "version": "0.0.1",
+  "description": "This is a simple Node App. See the README.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "cat qa.md; npm run start"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "node",
+    "app",
+    "tutorial"
+  ],
+  "author": "Matt Wojo",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
 }
