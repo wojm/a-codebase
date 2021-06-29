@@ -1,4 +1,10 @@
 # Quiz
 
 ## 0
-Get the web page at `example.com`
+Navigate to your documents folder
+
+## 1
+Make a folder called `/dev` and 
+
+## 2
+Make a file with the text `hello world`
