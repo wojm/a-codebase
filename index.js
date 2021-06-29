@@ -1,42 +1,90 @@
-
+/* eslint-disable no-constant-condition */
 
 /**
- * Variables are used to store temporary data. 
- * 
- * There are 3 ways to declare variables: const, let, var.
- * 
- * Generally, stick with const unless 
+ * If Statements help direct the flow of your code
  */
 
-/**
- * const - refers to a constant pointer. Meaning the pointer or value cannot change. 
- */
-const myVar = 0;
-// myVar now has the value of 0 
-console.log(myVar); // 0
+if (true) {
+	console.log('This will print');
+} else {
+	console.log('This will not print');
+}
+
+if (false) {
+	console.log('This will not printt');
+} else {
+	console.log('This will print');
+}
 
 /**
- * let - refers to a variable that is strictly scoped to the 
+ * else if can be used to add more cases
+ */
+
+if (false) {
+	console.log('This will not printt');
+} else if (true) {
+	console.log('This will print');
+} else if (true) {
+	console.log('This will not printt');
+}
+
+/**
+ * Prints can be nested as well
+ */
+
+if (true) {
+	if (true) {
+		console.log('This will printt');
+	}
+} else if (false) {
+	if (true) {
+		console.log('This will not printt');
+	}
+}
+
+/**
+ * We can evaluate in if statements
+ */
+if (0 === 0) {
+	console.log('This will print');
+} else {
+	console.log('This will not print');
+}
+
+/**
+ * We can use variables in 
+ */
+const name = 'matt';
+if (name === 'matt') {
+	console.log('This will print');
+} else {
+	console.log('This will not print');
+}
+
+/**
+ * we can also evaluate expressions which leads to some interesting examples 
  */
 
 let i = 0;
-console.log(i); // 0
-i = i + 1; // 
-console.log(i); // 1
+if (i++ === 2) {
+	console.log('This will not print');
+} else if (i++ === 2) {
+	console.log('This will not print');
+} else if (i++ === 2) {
+	console.log('This will not print');
+} else if (i++ === 2) {
+	console.log('This will print, this will execute because it is after the evaluation');
+}
 
-i++; // another way of writing i = i + 1
-console.log(i); // 2
-i += 1; // another way of writing i = i + 1
-console.log(i); // 3
+i = 0;
+if (++i === 2) {
+	console.log('This will not print');
+} else if (++i === 2) {
+	console.log('This will not print');
+} else if (++i === 2) {
+	console.log('This will print, because it is executed before the evaluation');
+} else if (++i === 2) {
+	console.log('This will not print');
+}
 
-// i++ operates after the operation it is a part of
-console.log(i++); // 3
-// whereas ++i will happen first
-console.log(++i); // 5
 
-/**
- * var - can also be update. It has small nuance on how it's defined and how long it exists. 
- * Generally, do not use, as it the memory it allocates does not get cleaned up
- * 
- * https://codeburst.io/difference-between-let-and-var-in-javascript-537410b2d707
- */
