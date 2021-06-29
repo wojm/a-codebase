@@ -1,17 +1,25 @@
-
-// This is a comments that extends for one line. anything 
-
 /**
- * This is a block comment and extends for many lines
- * 
- * Since comments are the only content of the file, we don't get results when we execute
+ * Numbers
+ *
+ * Only one type of number and it is a floating point (this is a low level detail)
  */
 
-// This is a print statement in javascript.
-console.log('Hello World from ./index.js');
+console.log('0: ' + 0 );
+console.log('1: ' + 1 );
+console.log('-1: ' + (-1)  );
+console.log('1.5: ' + 1.5 );
 
-console.log('Anything after a // will be ignored'); // this is ignored
+/**
+ * Arithmatic Operators
+ */
+console.log('2 + 3');
+console.log( 2 + 3 );
+console.log('2 * 3');
+console.log( 2 * 3 );
+console.log('2 - 3');
+console.log( 2 - 3 );
+console.log('2 / 3');
+console.log( 2 / 3 );
+console.log('2 ** 3');
+console.log( 2 ** 3 );
 
-// When run through node, this will output to terminal
-// When run through the web, this will output in the Developer Tool's Console
-// When run on a server, there will be an equivalent log that this writes to and can be looked up
