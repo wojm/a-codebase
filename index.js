@@ -1,90 +1,43 @@
-/* eslint-disable no-constant-condition */
 
 /**
- * If Statements help direct the flow of your code
+ * Switches are a generaliztion on if...else that allow us to continue into the next block
+ * 
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
  */
 
-if (true) {
-	console.log('This will print');
-} else {
-	console.log('This will not print');
+const num = 7;
+switch(num) {
+case 0:
+	console.log('january');
+case 1:
+	console.log('february');
+case 2:
+	console.log('march');
+case 3:
+	console.log('april');
+case 4:
+	console.log('may');
+case 5:
+	console.log('june');
+case 6:
+	console.log('july');
+case 7:
+	console.log('august');
+case 8:
+	console.log('september');
+case 9:
+	console.log('october');
+case 10:
+	console.log('november');
+case 11:
+	console.log('december');
 }
-
-if (false) {
-	console.log('This will not printt');
-} else {
-	console.log('This will print');
-}
+// august
+// september
+// october
+// november
+// december
 
 /**
- * else if can be used to add more cases
+ * Break - we can break out of 
  */
-
-if (false) {
-	console.log('This will not printt');
-} else if (true) {
-	console.log('This will print');
-} else if (true) {
-	console.log('This will not printt');
-}
-
-/**
- * Prints can be nested as well
- */
-
-if (true) {
-	if (true) {
-		console.log('This will printt');
-	}
-} else if (false) {
-	if (true) {
-		console.log('This will not printt');
-	}
-}
-
-/**
- * We can evaluate in if statements
- */
-if (0 === 0) {
-	console.log('This will print');
-} else {
-	console.log('This will not print');
-}
-
-/**
- * We can use variables in 
- */
-const name = 'matt';
-if (name === 'matt') {
-	console.log('This will print');
-} else {
-	console.log('This will not print');
-}
-
-/**
- * we can also evaluate expressions which leads to some interesting examples 
- */
-
-let i = 0;
-if (i++ === 2) {
-	console.log('This will not print');
-} else if (i++ === 2) {
-	console.log('This will not print');
-} else if (i++ === 2) {
-	console.log('This will not print');
-} else if (i++ === 2) {
-	console.log('This will print, this will execute because it is after the evaluation');
-}
-
-i = 0;
-if (++i === 2) {
-	console.log('This will not print');
-} else if (++i === 2) {
-	console.log('This will not print');
-} else if (++i === 2) {
-	console.log('This will print, because it is executed before the evaluation');
-} else if (++i === 2) {
-	console.log('This will not print');
-}
-
-
