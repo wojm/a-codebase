@@ -1,9 +1,30 @@
-# Welcome
-Welcome to The Codebase.
+# Python
 
-One codebase is a singular codebase that serves as both a template to start a project as well as a tutorial on how to code. It does this by asserting that every set of changes is a cohesive lesson, and every lesson is taught as a series of changes. As a result, each branch of this codebase of this codebase can show you exactly how it got to the way it was by following each predecessor lesson.
+Python is an interpreted, high-level, general-purpose programming language.
+ - interpreted:     run step-by-step (as opposed to compiled)
+ - high-level:      takes care of tricky details, but not optimized
+ - general-purpose: can be used for a wide range of applications and put onto many devices
 
-## Documents
-A repository is a series of documents. These documents should have structure and purpose.
-  - [development](./development.md) - document responsible for getting a developer started in this repository
-  - [thesaurus](./thesaurus.md) will provide definitions of important words
+## Motivation
+Python 
+
+## Setup
+
+### Install Python
+Visit the website
+https://www.python.org/downloads/
+
+Verify by going to your terminal application (or GitBash) and type:
+```
+python --version
+```
+You should see a version that start with a 3. A google search with the phrase `uprade python mac` or `upgrade python windows` or `upgrade python linux` should provide upgrade instructions.
+
+## Execution
+To execute, type:
+```
+python main.py
+```
+
+## Shell
+We can also also open up a python shell to execute python code. This is similar to terminal in that terminal was a bash shell. A python shell will also execute code line by line
