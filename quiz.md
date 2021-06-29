@@ -1,11 +1,10 @@
-# Bash Practice
+# Quiz
 
-
-## 0 
-Print Hello World
+## 0
+Navigate to your documents folder
 
 ## 1
-List the content of your root directory
+Make a folder called `/dev` and 
 
 ## 2
-List the content of your Documents directory
+Make a file with the text `hello world`
