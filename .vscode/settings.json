@@ -1,16 +1,3 @@
 {
-	"editor.insertSpaces": false, // prefer tabs over spaces
-	"editor.detectIndentation": false,
-	"editor.wordWrap": "bounded", // wrap after 100 characters
-	"editor.wordWrapColumn": 100,
-	"explorer.sortOrder": "type", // sort files based on their extension
-	"files.trimTrailingWhitespace": true, // remove whitespace
-	"[json]": {
-		"editor.tabSize": 4,
-		"editor.insertSpaces": false,
-	},
-	"[markdown]": {
-		"editor.wordWrap": "bounded",
-		"editor.wordWrapColumn": 100,
-	},
+	"python.pythonPath": "${workspaceRoot}/venv/bin/python"
 }
