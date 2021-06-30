@@ -7,3 +7,6 @@ One codebase is a singular codebase that serves as both a template to start a pr
 A repository is a series of documents. These documents should have structure and purpose.
   - [development](./development.md) - document responsible for getting a developer started in this repository
   - [thesaurus](./thesaurus.md) will provide definitions of important words
+
+
+f}()3}(fds)
