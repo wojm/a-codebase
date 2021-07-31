@@ -36,31 +36,46 @@ export default function App() {
   const [colors6, setColors6] = useState([]);
   const [colors7, setColors7] = useState([]);
   function onClick() {
-    setColors([...colors, playerTurn]);
-    togglePlayerTurn()
+    if (colors.length < 6){
+      setColors([...colors, playerTurn]);
+      togglePlayerTurn()
+    }
   }
   function onClick2() {
-    setColors2([...colors2, playerTurn]);
-    togglePlayerTurn()
+    if (colors2.length < 6){
+      setColors2([...colors2, playerTurn]);
+      togglePlayerTurn()
+    }
   }
   function onClick3() {
-    setColors3([...colors3, playerTurn]);
-    togglePlayerTurn()
+    if (colors3.length < 6){
+      setColors3([...colors3, playerTurn]);
+      togglePlayerTurn()
+    }
   }
   function onClick4() {
-    setColors4([...colors4, playerTurn]);
-    togglePlayerTurn()
-  }function onClick5() {
-    setColors5([...colors5, playerTurn]);
-    togglePlayerTurn()
+    if (colors4.length < 6){
+      setColors4([...colors4, playerTurn]);
+      togglePlayerTurn()
+    }
+  }
+  function onClick5() {
+    if (colors5.length < 6){
+      setColors5([...colors5, playerTurn]);
+      togglePlayerTurn()
+    }
   }
   function onClick6() {
-    setColors6([...colors6, playerTurn]);
-    togglePlayerTurn()
+    if (colors6.length < 6){
+      setColors6([...colors6, playerTurn]);
+      togglePlayerTurn()
+    }
   }
   function onClick7() {
-    setColors7([...colors7, playerTurn]);
-    togglePlayerTurn()
+    if (colors7.length < 6){
+      setColors7([...colors7, playerTurn]);
+      togglePlayerTurn()
+    }
   }
 
   return (
