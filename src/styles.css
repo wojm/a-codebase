@@ -2,3 +2,18 @@
   font-family: sans-serif;
   text-align: center;
 }
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+  margin: 7px;
+}
+.column {
+  display: inline-block;
+}
+.board {
+  background-color: blue;
+  display: inline-block;
+}
