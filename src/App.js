@@ -7,7 +7,7 @@ export default function App() {
     'Faran',
     'Joe',
     'Michael',
-  ];
+  ].sort();
   return (
     <div className="App">
       { names.map(name => <p>{name}</p>) }
