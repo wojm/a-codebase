@@ -22,3 +22,19 @@ cd ~ # move to the root directory
 cd ~/Documents # move to the documents folder
 mkdir ~/dev # make a directory (folder) called dev in the root folder
 ```
+
+## Requirements
+### Docker
+Docker provides a declarative way of defining context.
+
+#### Installation
+To install, follow these [instructions](https://www.docker.com/get-started)
+
+##### Verificaiton
+```
+docker build -t latest .; docker run latest
+```
+This will output:
+```
+hello from Dockerfile
+```
