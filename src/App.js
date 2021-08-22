@@ -5,6 +5,11 @@ export default function App() {
     <div className="App">
       <div className="blue">
         <div className="slot"></div>
+        <div className="slot"></div>
+        <div className="slot"></div>
+        <div className="slot"></div>
+        <div className="slot"></div>
+        <div className="slot"></div>
       </div>
     </div>
   );
