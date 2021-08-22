@@ -5,7 +5,7 @@
 .slot {
   height: 50px;
   width: 50px;
-  background-color: transparent;
+  background-color: white;
   border-radius: 50%;
   margin: 5px;
 }
