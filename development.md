@@ -22,3 +22,9 @@ cd ~ # move to the root directory
 cd ~/Documents # move to the documents folder
 mkdir ~/dev # make a directory (folder) called dev in the root folder
 ```
+
+### Git
+Git is used to version control your code using a repository. A repository will allow changes to be composed into
+
+#### .gitignore
+The [.gitignore](./.gitignore) file contains that should not be added to the repository.
