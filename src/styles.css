@@ -2,3 +2,17 @@
   font-family: sans-serif;
   text-align: center;
 }
+.slot {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin: 5px;
+}
+.column {
+  display: inline-block;
+}
+.board {
+  background-color: blue;
+  display: inline-block;
+}
