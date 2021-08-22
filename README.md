@@ -1,10 +1,15 @@
-# Repository Seed
-This is a template to seed repositories
+# Graphql Python
 
-## Woj's Guide to Repository Management
-This repository follows a specific structure. Each commit should be made only on top of it's prerequisites. This way ideas can be traced.
+## Setup
+### Initial 
+To set up install the graphene library and add it to the requirements file:
+```
+pip install graphene
+pip freeze > requirements.txt
+```
 
-## Documents
-A repository is a series of documents. These documents should have structure and purpose.
-  - [development.md](./development.md) - document responsible for getting a developer started in this repository
-
+### Subsequent
+If the setup command was run, we can simply install from the requirements file:
+```
+pip install -r requirements.txt
+```
