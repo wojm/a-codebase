@@ -5,9 +5,10 @@ export default function App() {
   return (
     <div className="App">
       <p>Matt</p>
-      <p>Faran</p>
+      <p class="light-gray">Faran</p>
       <p>Joe</p>
-      <p>Michael</p>
+      <p class="light-gray">Michael</p>
     </div>
   );
 }
+
