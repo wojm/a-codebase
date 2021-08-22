@@ -2,13 +2,15 @@ import "./styles.css";
 
 
 export default function App() {
+  const names = [
+    'Matt',
+    'Faran',
+    'Joe',
+    'Michael',
+  ];
   return (
     <div className="App">
-      <p>Matt</p>
-      <p class="light-gray">Faran</p>
-      <p>Joe</p>
-      <p class="light-gray">Michael</p>
+      { names.map((name, index) => <p className={ index % 2 === 0? 'light-gray': '' }>{name}</p>) }
     </div>
   );
 }
-
