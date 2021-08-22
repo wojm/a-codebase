@@ -6,3 +6,4 @@
 # the tmp directory is a frequent place to put ignorable files
 **/tmp/
 **secret**
+node_modules
