@@ -10,10 +10,7 @@ export default function App() {
   ];
   return (
     <div className="App">
-      <p>{names[0]}</p>
-      <p>{names[1]}</p>
-      <p>{names[2]}</p>
-      <p>{names[3]}</p>
+      { names.map(name => <p>{name}</p>) }
     </div>
   );
 }
