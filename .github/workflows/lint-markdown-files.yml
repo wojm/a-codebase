@@ -1,0 +1,17 @@
+name: Lint Markdown Files
+
+on:
+  - push
+
+jobs:
+  lint-Markdown:
+    name: lint the markdown files
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Lint changelog file
+        uses: avto-dev/markdown-lint@v1
