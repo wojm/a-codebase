@@ -1,37 +1,25 @@
 
-echo "This file execute "
-
-# List - will list the content for the given directory
-ls # This is useful for showing the existance of a file
-
-# we can reference other folders with out ls command by passing it in as the optional argument
-ls ../
-
-# there are also flags that can augment our command
-
-ls -a # list all the files, including those starting with a '.'
-ls -l # shows a long form of the content, useful for seeing access permissions
+# Make Directory - will create a directory (folder) with a given name
+mkdir tmp
 
 
-# Path Working Directory - this will tell us where we are on our operating system
+# Copy - copy files from one folder to the other
+# cp <files> <destination>
+# <files> can be a regular expression to select multiple. The most frequent use is `<folder>/*` will get all the content of a folder
+# <destination> is where to put the folder
 
-# A directory is a folder
-# pwd shows the path (from root) to the current directory you are in
-# It is useful for figuring out where you are
+cp 0-mkdir.sh tmp/ # copy the first file into the tmp folder
 
-pwd
+# Touch - Create an empty file with a given name
+touch tmp/README.md # creates a README file in the tmp directory
 
-# Change Directory
-# cd command will help navigate between directories
-# we can use a relative path or an absolute path
+# Source - we can execute the above files 
+# Bash files can be ran one of two ways:
 
-cd ./  # will change to our current working directory, aka does nothing
+# source <filename>
+# or 
+# ./<filename>
 
-cd ../ # go to the parent directory
+# Bash files often will have a ["Sha-Bang"](https://www.tldp.org/LDP/abs/html/sha-bang.html) that says what definition of bash we want to use
 
-cd ./1-navigation # this will go back into this directory
-
-# the below commands will change to your root directory
-# cd ~
-# cd
-
+source 1-echo.sh
