@@ -1,3 +1,5 @@
-FROM ubuntu
+FROM python:3
 
-CMD ["echo" "hello from Dockerfile"]
+COPY . .
+
+CMD [ "python", "main.py" ]
