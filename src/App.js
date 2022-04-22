@@ -1,10 +1,20 @@
+import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
+  const [playerTurn, changePlayerTurn] = useState('red');
+
+  function togglePlayerTurn() {
+    if (playerTurn === 'red') {
+      changePlayerTurn('yellow');
+    } else {
+      changePlayerTurn('red');
+    }
+  }
   return (
     <div className="App">
-      <h1>Hello My React App</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      It is {playerTurn}'s turn
+      <button onClick={togglePlayerTurn}>change player</button>
     </div>
   );
 }
