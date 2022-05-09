@@ -25,7 +25,7 @@ When the slot is clicked, we want the `togglePlayerTurn` function to be executed
 ### Change the Slot Color
 Currently, the slot `<div>` already has a specific class name assigned to it that contols the height, width and shape of the slot. We want to add a new class, that updates the color based on the player turn: when our `playerTurn` is `red` we want a style attribute of `red`. 
  
-First, we create two two CSS class names in `styles.css` that change the `background-color` to `red` and `yellow` respectfully. 
+First, we create two CSS class names in `styles.css` that change the `background-color` to `red` and `yellow` respectfully. We name these classes `.red` and `.yellow` respectively so that we can link it to the `playerTurn` later. 
  
 Next, we want to update the slot's classes to include the new class name for the colors in addition to keeping the former class name that describes the slot's size and shape. Since the color class name, `playerTurn`, is a variable you'll need to use special syntax that includes some backticks (`` ` ``) and a dollar sign (`$`). The syntax for using multiple class names, with one being a variable,  is the third example in [this documentation](https://medium.com/@christopherpecoraro/how-to-use-variables-strings-inside-classname-attributes-in-gatsby-7baebf360b05). 
 
