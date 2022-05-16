@@ -7,8 +7,10 @@
   width: 50px;
   background-color: white;
   border-radius: 50%;
-  margin: 5px;
+  margin: 0px;
 }
 .blue {
   background-color: blue;
+  height: 50px;
+  width: 50px;
 }
