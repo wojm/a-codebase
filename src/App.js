@@ -12,7 +12,7 @@ export default function App() {
     }
   }
   function addChips() {
-    if (chips.length < 8) {
+    if (chips.length < 6) {
       changeChips([...chips, playerTurn]);
       togglePlayerTurn();
     }
