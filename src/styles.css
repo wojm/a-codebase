@@ -14,3 +14,16 @@
   height: 50px;
   width: 50px;
 }
+.column {
+  display: inline-block;
+}
+.board {
+  background-color: blue;
+  display: inline-block;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
