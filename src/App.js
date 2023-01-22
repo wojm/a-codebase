@@ -10,7 +10,7 @@ export default function App() {
   ];
   return (
     <div className="App">
-      { names.map(name => <p>{name}</p>) }
+      { names.map((name, index) => <p className={ index % 2 === 0? 'light-gray': '' }>{name}</p>) }
     </div>
   );
 }
