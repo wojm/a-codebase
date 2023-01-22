@@ -1,0 +1,8 @@
+# Generic .gitignore files
+
+# these files are created when we open a folder in macOS
+**/.DS_STORE
+
+# the tmp directory is a frequent place to put ignorable files
+**/tmp/
+**secret**
