@@ -1,17 +1,59 @@
-
-// This is a comments that extends for one line. anything 
-
 /**
- * This is a block comment and extends for many lines
- * 
- * Since comments are the only content of the file, we don't get results when we execute
+ * Primitives are the simplest building blocks.
  */
 
-// This is a print statement in javascript.
-console.log('Hello World from ./index.js');
+/**
+ * Boolean
+ */
+console.log('true: ' +  true );
+console.log('false: ' +  false );
 
-console.log('Anything after a // will be ignored'); // this is ignored
 
-// When run through node, this will output to terminal
-// When run through the web, this will output in the Developer Tool's Console
-// When run on a server, there will be an equivalent log that this writes to and can be looked up
+/**
+ * OR
+ */
+console.log('OR ||');
+console.log('true || true:   ' + (true || true));
+console.log('true || false:  ' + (true || false));
+console.log('false || true:  ' + (false || true));
+console.log('false || false: ' + (false || false));
+
+/**
+ * AND
+ */
+console.log('AND &&');
+console.log('true && true:   ' + (true && true));
+console.log('true && false:  ' + (true && false));
+console.log('false && true:  ' + (false && true));
+console.log('false && false: ' + (false && false));
+
+/**
+ * NOT
+ */
+console.log('NOT !');
+console.log('! true: ' + (! true));
+console.log('! false: ' + (! false));
+
+
+//
+// Advanced
+//
+
+/**
+ * Javascript also has bitwise operators. Instead of checking true and false. We can compare every bit
+ * as if they are true and false. They can be good to know, but are often used infrequently
+ *
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
+ */
+
+console.log(5 & 13); // 0101 & 1101 = 0101
+// expected output: 5;
+
+console.log(parseInt('0101',2) & parseInt('1101',2));
+// expected output: 5;
+
+console.log(5 & 13 & 3); // 0101 & 1101 & 0011 = 0001
+// expected output: 1;
+
+console.log(5 | 13); // 0101 | 1101 = 1101
+// expected output: 13
