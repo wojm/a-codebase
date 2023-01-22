@@ -1,11 +1,20 @@
 {
-  "name": "npm_intro",
-  "version": "0.0.0",
-  "description": "intro to npm",
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "Jest is a javascript testing framework. There are many testing frameworks. This one is popularized by Facebook and is known for its integration with React and being able to render components during tests.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"test": "npx jest . ",
+	"start": "node index.js"
   },
+  "keywords": [
+    "jest",
+    "testing"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^25.2.3"
+  }
 }
