@@ -1,25 +1,15 @@
 
-# Make Directory - will create a directory (folder) with a given name
-mkdir tmp
+# Curl - Curl is used to get the information at a url endpoint
+
+curl google.com 
 
 
-# Copy - copy files from one folder to the other
-# cp <files> <destination>
-# <files> can be a regular expression to select multiple. The most frequent use is `<folder>/*` will get all the content of a folder
-# <destination> is where to put the folder
+# Secure Shell (ssh)
+# runs a network protocol to connect to another computer
+# ssh <destination> 
+# to connect to  destination is an address for a computer (IP, URL...)
 
-cp 0-mkdir.sh tmp/ # copy the first file into the tmp folder
+# ssh <username>@<destionation>
+# to login with a username. this will prompt you for a password
 
-# Touch - Create an empty file with a given name
-touch tmp/README.md # creates a README file in the tmp directory
-
-# Source - we can execute the above files 
-# Bash files can be ran one of two ways:
-
-# source <filename>
-# or 
-# ./<filename>
-
-# Bash files often will have a ["Sha-Bang"](https://www.tldp.org/LDP/abs/html/sha-bang.html) that says what definition of bash we want to use
-
-source 1-echo.sh
+# Secure Copy (scp)
