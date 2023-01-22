@@ -1,4 +1,3 @@
-# This files prints hello world in python
 
-print('hello world')
-
+def hello(name = 'World'):
+	return f'hello { name }'
