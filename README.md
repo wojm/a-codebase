@@ -1,76 +1,39 @@
-# Welcome
-Welcome to The Coding Course.
+# Getting Started
+Bash is a shell scripting language for Unix.
+ - shell -> command line user interface, that is you write text
+ - scripting -> executed in realtime and not compiled, generally intended to do things once
+ - Unix -> Mac and Linux
+   - on Windows we use git bash to have access to these commands
 
-The Coding Course is dedicated to explaining how to code. Code is a representation of formalized ideas. Just like legal code tells a court how to rule, computer code tells a computer how to execute tasks. These
+## Motivation 
+Bash is how we interact with unix systems. Although most applications are not defined in bash, we use bash to set up our applications and to run them. Bash is also how we can interact with our file structure. At it's core, a program is a series of files that get run in a specific order. Bash will help us run those commands. More importantly, when we run into issues, bash will help us understand why certain issues came up. 
 
-## Codebase template
-It is also a codebase that can be used to start a project a singular codebase that serves as both a template to start a project as well as a tutorial on how to code.
+Command Line Interfaces (CLI) are tools we run in the command line. Although a lot of our programs will have graphic user interfaces, we can interact with all programs through text. Although initially, it may feel easier to 
 
-In this course, does this by asserting that every set of changes is a cohesive lesson, and every lesson is taught as a series of changes. As a result, each branch of this codebase of this codebase can show you exactly how it got to the way it was by following each predecessor lesson.
+## Running Applications
+Use Terminal or GitBash
 
-## Course Overview
-### Code
+## Executing commands
+Inside of this terminal window (or GitBash for windows) you can type any bash commands. Commands are executed line by line even if you paste multiple lines. Later we will see a way to execute an entire file.
 
-#### Fundamental Unit of Code
-Code has some fundamental unit. That is, there is a point where we cannot breakdown code anymore. We can break up legal documents into sections that each serve a cohesive purpose. We can even go further. Sections can be broken up into paragraphs which may be further broken up into sentences and then clauses.
+## Command Structure
+### Arguments
+Commands take in arguments (some of which are optional)
+```sh
+man git # git is the argument for the manual command
+```
 
-Can sentences/clauses be broken up into words and maintain a cohesive purpose? No. A single word cannot convey an idea. In the same way, the smallest unit of code will be enough to complete a purpose.
+### Flags
+Commands take in optional flags that can augment our commands. Some flags will take arguments after them
+```sh
+ls -l # we are adding the '-l' flag to a list 
+```
 
-#### Software Engineering
-Software Engineering is the process of breaking down a problem into smaller problems, solving those smaller problems, and then combining those smaller solutions into bigger problems. If the smaller problems cannot be solved, we can reapply our thought process of breaking them up.
+```sh
+psql -d myDB -h myurl.com/mydb -U myUsername
+```
 
-### Philosophy
-Every lesson directly improves a students ability to code.
- - We teach through Github as this tool is directly related to software development.
- - Links to articles are not given directly. Instead, we present a search result that will lead to the article.
+The most helpful flag is `--help` as it is implemented almost universally for commands and will help explain how to use a command.
 
-#### Inspiration
-This course was inspired by an article about a [statistic course](https://www.google.com/search?q=statistics+course+fractal) that was taught in a fractal building.
-
-### Takeaways
-Upon completing this course, you will:
- - practice researching technical topic and completing technical tutorials.
-
-### Resources
-
-## Connect 4
-As an exercise, take the game Connect 4 and describe it. Would your description tell a new player all the rules.
-
-## Next Lesson
-Currently you are at lesson 0. To get to lesson 1, find the dropdown with `lesson-0` and change it to `lesson-1`
-
-### Philosophy
-Every lesson directly improves a students ability to code.
- - We teach through Github as this tool is directly related to software development.
- - Links to articles are not given directly. Instead, we present a search result that will lead to the article.
-
-#### Inspiration
-This course was inspired by an article about [statistics course](https://www.google.com/search?q=statistics+course+fractal) taught in a fractal pattern.
-
-### Takeaways
-Upon completing this course, you will:
- - search for documents
- - breakdown problems into smaller problems and then implement solutions via software
- - organize technical and non-technical solutions into coherent folder structures
-
-### Resources
-#### Discord
-Join us on [discord](https://discord.gg/AJ6bswH5eg).
-
-## Connect 4
-As an exercise try to describe Connect 4 to someone who wants to play it but never has.
-
-Connect4 is a two player game where players take turns dropping their colored pieces to the bottom of an incomplete column 7 column x 6 rows board game.
-A player wins when they connect 4 pieces in one of three ways: vertically, horizontally, diagonally.
-
-As a to-do list, this might look like:
- - two players -> tracker for turn (binary)
- - 7 column x 6 rows board game
-   - dropping pieces to the bottom of an incomplete column
- - connect 4
-   - vertically
-   - horizontally
-   - diagonally
-
-## Next Lesson
-Currently, you are on lesson 0. To go to the next lesson, lesson 1, find the button with `lesson-0`  and change it to lesson 1.
+## .sh
+Bash files are denoted with a `.sh` at the end which will help your editor highlight characters correctly
