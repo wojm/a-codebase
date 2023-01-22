@@ -1,8 +1,4 @@
-# This file uses an installed package to print hello world in camelcase
-import camelcase
+# This files prints hello world in python
 
-c = camelcase.CamelCase()
+print('hello world')
 
-txt = "hello world"
-
-print(c.hump(txt))

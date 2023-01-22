@@ -1,3 +1,9 @@
-FROM ubuntu
+FROM python:3
 
-CMD ["echo" "hello from Dockerfile"]
+COPY requirements.txt requirements.txt
+
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD [ "python", "main.py" ]
