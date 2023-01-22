@@ -7,3 +7,4 @@
 **/tmp/
 **secret**
 __pycache__
+venv
